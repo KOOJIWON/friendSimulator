@@ -4,16 +4,18 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     public final static String TAG = "프렌즈시뮬레이터(혜수)앱 : Main";
-
+    private ImageView mImageViewFriendVisual;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Log.d(TAG, "onCreat메소드 호출!! ~~!!!");
         setContentView(R.layout.activity_main);
+        mImageViewFriendVisual = (ImageView) findViewById(R.id.friend_visual);
         Log.d(TAG, "activity_main 레이아웃 세팅~!~~~~!!!!");
     } //end of onCreate
 
@@ -25,23 +27,33 @@ public class MainActivity extends AppCompatActivity {
         {
             case R.id.button1:
                 Log.d(TAG, "버튼1 클릭");
+                mImageViewFriendVisual.setImageResource(R.drawable.hyesu1);
                 Toast.makeText(this, "열심히 덕질중", Toast.LENGTH_SHORT).show();
+                break;
 
             case R.id.button2:
                 Log.d(TAG, "버튼2 클릭");
+                mImageViewFriendVisual.setImageResource(R.drawable.hyesu2);
                 Toast.makeText(this, "나..안자..", Toast.LENGTH_SHORT).show();
+                break;
 
             case R.id.button3:
                 Log.d(TAG, "버튼3 클릭");
+                mImageViewFriendVisual.setImageResource(R.drawable.hyesu3);
                 Toast.makeText(this, "(어깨를 주무르며)일어나!", Toast.LENGTH_SHORT).show();
+                break;
 
             case R.id.button4:
                 Log.d(TAG, "버튼4 클릭");
+                mImageViewFriendVisual.setImageResource(R.drawable.hyesu4);
                 Toast.makeText(this, "에?", Toast.LENGTH_SHORT).show();
+                break;
 
             case R.id.button5:
                 Log.d(TAG, "버튼5 클릭");
+                mImageViewFriendVisual.setImageResource(R.drawable.hyesu5);
                 Toast.makeText(this, "호룰루", Toast.LENGTH_SHORT).show();
+                break;
 
             default:
                 Log.d(TAG, "에러!에러!에러!");

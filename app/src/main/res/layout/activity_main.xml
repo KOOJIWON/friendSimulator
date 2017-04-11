@@ -1,57 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="kr.hs.emirim.koojiwon.friendsimulator.MainActivity">
+    >
 
+<TextView
+    android:id="@+id/textView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:textSize="40sp"
+    android:text="강혜수 시뮬레이터" />
 
-    <TextView
-        android:id="@+id/textview"
-        android:layout_width="368dp"
-        android:layout_height="wrap_content"
-        android:text="혜수 시뮬레이터"
-        android:textSize="20dp"
-        tools:layout_editor_absoluteY="56dp"
-        tools:layout_editor_absoluteX="8dp" />
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="368dp"
-        android:layout_height="wrap_content"
-        android:text="평소의 혜수"
-        app:layout_constraintTop_toBottomOf="@+id/textview"
-        tools:layout_editor_absoluteX="8dp" />
+<ImageView
+    android:id="@+id/friend_visual"
+    android:layout_gravity="center"
+    android:src="@drawable/secret"
+    android:layout_width="200dp"
+    android:layout_height="200dp" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="368dp"
-        android:layout_height="wrap_content"
-        android:text="꾸벅꾸벅 조는 혜수"
-        app:layout_constraintTop_toBottomOf="@+id/button1"
-        tools:layout_editor_absoluteX="8dp" />
+<Button
+    android:id="@+id/button1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    android:onClick="onClick"
+    android:text="평소의 혜수" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="368dp"
-        android:layout_height="wrap_content"
-        android:text="꾸벅꾸벅 조는 지원을 본 혜수"
-        app:layout_constraintTop_toBottomOf="@+id/button2"
-        tools:layout_editor_absoluteX="8dp" />
+<Button
+    android:id="@+id/button2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="3dp"
+    android:onClick="onClick"
+    android:text="꾸벅꾸벅 조는 혜수" />
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="368dp"
-        android:layout_height="wrap_content"
-        android:text="혜수의 어깨를 건드렸을때"
-        app:layout_constraintTop_toBottomOf="@+id/button3"
-        tools:layout_editor_absoluteX="8dp" />
+<Button
+    android:id="@+id/button3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="3dp"
+    android:onClick="onClick"
+    android:text="꾸벅꾸벅 조는 지원을 본 혜수" />
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="368dp"
-        android:layout_height="wrap_content"
-        android:text="댄싱 혜수"
-        app:layout_constraintTop_toBottomOf="@+id/button4"
-        tools:layout_editor_absoluteX="8dp" />
-</android.support.constraint.ConstraintLayout>
+<Button
+    android:id="@+id/button4"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="3dp"
+    android:onClick="onClick"
+    android:text="혜수의 어깨를 건드렸을 때" />
+<Button
+    android:id="@+id/button5"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="3dp"
+    android:onClick="onClick"
+    android:text="댄싱혜수" />
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+</LinearLayout>
