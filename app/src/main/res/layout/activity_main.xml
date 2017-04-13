@@ -1,67 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    >
+    android:orientation="vertical">
 
-<TextView
-    android:id="@+id/textView"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:gravity="center"
-    android:textSize="40sp"
-    android:text="강혜수 시뮬레이터"
-    android:onClick="onClick"/>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:text="강혜수 시뮬레이터"
+        android:textSize="40sp" />
 
-<ImageView
-    android:id="@+id/friend_visual"
-    android:layout_gravity="center"
-    android:src="@drawable/secret"
-    android:layout_width="200dp"
-    android:layout_height="200dp" />
+    <ImageView
+        android:id="@+id/friend_visual"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@drawable/secret" />
 
-<Button
-    android:id="@+id/button1"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_margin="3dp"
-    android:onClick="onClick"
-    android:text="평소의 혜수" />
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:onClick="onClick"
+        android:text="평소의 혜수" />
 
-<Button
-    android:id="@+id/button2"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="3dp"
-    android:onClick="onClick"
-    android:text="꾸벅꾸벅 조는 혜수" />
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:onClick="onClick"
+        android:text="꾸벅꾸벅 조는 혜수" />
 
-<Button
-    android:id="@+id/button3"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="3dp"
-    android:onClick="onClick"
-    android:text="꾸벅꾸벅 조는 지원을 본 혜수" />
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:onClick="onClick"
+        android:text="꾸벅꾸벅 조는 지원을 본 혜수" />
 
-<Button
-    android:id="@+id/button4"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="3dp"
-    android:onClick="onClick"
-    android:text="혜수의 어깨를 건드렸을 때" />
-<Button
-    android:id="@+id/button5"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="3dp"
-    android:onClick="onClick"
-    android:text="댄싱혜수" />
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:onClick="onClick"
+        android:text="혜수의 어깨를 건드렸을 때" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:onClick="onClick"
+        android:text="댄싱혜수" />
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"

@@ -24,33 +24,29 @@ public class MainActivity extends AppCompatActivity {
         mMediaPlayer = MediaPlayer.create(this, R.raw.introducehysue);
         mMediaPlayer.setLooping(false);
         mMediaPlayer.start();
-        mVib = (Vibrator)getSystemService(VIBRATOR_SERVICE);
+        mVib = (Vibrator) getSystemService(VIBRATOR_SERVICE);
         mVib.vibrate(2000);
         Log.d(TAG, "activity_main 레이아웃 세팅~!~~~~!!!!");
     } //end of onCreate
 
     @Override
-    protected void onDestroy()
-    {
+    protected void onDestroy() {
         super.onDestroy();
         mMediaPlayer.pause(); // 정지
         mMediaPlayer.stop(); //CD 뺀 느낌
     } // end of onDestroy
 
-    void onClick(View view)
-    {
+    void onClick(View view) {
         Log.d(TAG, "onClick메소드 호출!! ~~!!!");
         Log.d(TAG, "클릭된 뷰 id : " + view.getId());
         mVib.vibrate(1000);
 
-        if(mMediaPlayer.isPlaying())
-        {
+        if (mMediaPlayer.isPlaying()) {
             mMediaPlayer.pause();
         } // end of if
 
-        switch (view.getId())
-        {
-            case  R.id.friend_visual:
+        switch (view.getId()) {
+            case R.id.friend_visual:
                 Log.d(TAG, "사진 클릭");
                 mImageViewFriendVisual.setImageResource(R.drawable.secret);
                 break;
